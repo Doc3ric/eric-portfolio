@@ -4,28 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eric Alenton — Web Developer | Data Entry & Part-Time</title>
+  <title>Eric Alenton — Web Developer | Data Entry &amp; Part-Time</title>
   <meta name="description"
     content="Eric Alenton is a BSIT Web Developer currently working at the Provincial Human Resource Management Office in Bukidnon. Seeking part-time and data entry opportunities." />
-  
+
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:title" content="Eric Alenton — Web Developer" />
   <meta property="og:description" content="BSIT Web Developer with expertise in Laravel, PHP, and JavaScript. Seeking part-time opportunities." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://doc3ric.github.io/" />
-  
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Eric Alenton — Web Developer" />
   <meta name="twitter:description" content="BSIT Web Developer currently working at PHRMO. Available for part-time work." />
 
-  <!-- Favicon placeholder -->
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -63,6 +63,11 @@
 
   <!-- ===== HERO ===== -->
   <section id="hero">
+    <!-- Background orbs -->
+    <div class="hero-orb-1"></div>
+    <div class="hero-orb-2"></div>
+    <div class="hero-orb-3"></div>
+
     <div class="hero-content">
       <div class="hero-left">
         <div class="availability-badge">
@@ -70,7 +75,7 @@
           Open to Part-Time &amp; Data Entry Opportunities
         </div>
         <h1 class="hero-title">
-          Building <span class="gradient-text">Digital Solutions</span><br />
+          Building <span class="gradient-text" id="typewriter-target">Digital Solutions</span><br />
           That Make an Impact
         </h1>
         <p class="hero-subtitle">
@@ -80,7 +85,7 @@
           and a strong work ethic.
         </p>
         <div class="hero-cta">
-          <a href="#projects" class="btn-primary" id="view-projects-btn">View Projects</a>
+          <a href="#projects" class="btn-primary" id="view-projects-btn">View Projects →</a>
           <a href="resume.pdf" download class="btn-outline" id="download-resume-btn">Download Resume</a>
           <a href="#contact" class="btn-outline" id="contact-me-btn">Contact Me</a>
         </div>
@@ -108,7 +113,24 @@
       </div>
       <div class="hero-right">
         <div class="photo-wrapper">
-          <img src="avatar.png" alt="Eric Alenton — Web Developer" class="hero-photo" id="profile-photo" />
+          <div class="photo-inner">
+            <img src="avatar.png" alt="Eric Alenton — Web Developer" class="hero-photo" id="profile-photo" />
+          </div>
+          <!-- Floating badges -->
+          <div class="photo-badge photo-badge-1">
+            <span class="badge-emoji">💼</span>
+            <div class="badge-text">
+              <span class="badge-label">Status</span>
+              <span class="badge-value">Available Now</span>
+            </div>
+          </div>
+          <div class="photo-badge photo-badge-2">
+            <span class="badge-emoji">⚡</span>
+            <div class="badge-text">
+              <span class="badge-label">Stack</span>
+              <span class="badge-value">Laravel + Node</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -117,7 +139,7 @@
   <!-- ===== ABOUT ===== -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-tag">01 / ABOUT</div>
+      <div class="section-tag">01 / About</div>
       <h2 class="section-title">The person behind the code</h2>
       <p class="section-sub">Bachelor of Science in Information Technology Graduate. Building things that matter.</p>
       <div class="about-grid">
@@ -143,7 +165,7 @@
             grow my income and skills during evenings.</p>
         </div>
         <div class="about-card">
-          <div class="about-card-title">What I bring to the table</div>
+          <div class="about-card-title">✦ What I bring to the table</div>
           <p>Clean, readable code. A strong foundation in database design. A team-player attitude with a drive to
             continuously learn and improve.</p>
           <div class="competency-tags">
@@ -164,12 +186,12 @@
   <!-- ===== SKILLS ===== -->
   <section id="skills" class="section section-alt">
     <div class="container">
-      <div class="section-tag">02 / SKILLS</div>
+      <div class="section-tag">02 / Skills</div>
       <h2 class="section-title">Core expertise</h2>
       <p class="section-sub">Six domains of technical proficiency powering every project I build.</p>
       <div class="skills-grid">
 
-        <div class="skill-card" id="skill-backend">
+        <div class="skill-card tilt-card" id="skill-backend">
           <div class="skill-card-top">
             <div class="skill-icon-box" style="--icon-color:#60a5fa;--icon-bg:rgba(96,165,250,0.12)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -187,7 +209,7 @@
           </div>
         </div>
 
-        <div class="skill-card" id="skill-frontend">
+        <div class="skill-card tilt-card" id="skill-frontend">
           <div class="skill-card-top">
             <div class="skill-icon-box" style="--icon-color:#a78bfa;--icon-bg:rgba(167,139,250,0.12)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -206,7 +228,7 @@
           </div>
         </div>
 
-        <div class="skill-card" id="skill-database">
+        <div class="skill-card tilt-card" id="skill-database">
           <div class="skill-card-top">
             <div class="skill-icon-box" style="--icon-color:#34d399;--icon-bg:rgba(52,211,153,0.12)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -226,7 +248,7 @@
           </div>
         </div>
 
-        <div class="skill-card" id="skill-data-entry">
+        <div class="skill-card tilt-card" id="skill-data-entry">
           <div class="skill-card-top">
             <div class="skill-icon-box" style="--icon-color:#fbbf24;--icon-bg:rgba(251,191,36,0.12)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -245,7 +267,7 @@
           </div>
         </div>
 
-        <div class="skill-card" id="skill-tools">
+        <div class="skill-card tilt-card" id="skill-tools">
           <div class="skill-card-top">
             <div class="skill-icon-box" style="--icon-color:#f97316;--icon-bg:rgba(249,115,22,0.12)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -265,7 +287,7 @@
           </div>
         </div>
 
-        <div class="skill-card" id="skill-soft">
+        <div class="skill-card tilt-card" id="skill-soft">
           <div class="skill-card-top">
             <div class="skill-icon-box" style="--icon-color:#fb7185;--icon-bg:rgba(251,113,133,0.12)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -291,7 +313,7 @@
   <!-- ===== TECH STACK ===== -->
   <section id="techstack" class="section">
     <div class="container">
-      <div class="section-tag">03 / TECH STACK</div>
+      <div class="section-tag">03 / Tech Stack</div>
       <h2 class="section-title">Technologies I work with</h2>
       <p class="section-sub">Tools and languages I use to build production-ready applications — grouped by category.</p>
 
@@ -309,7 +331,7 @@
             <div class="tech-pill" id="tech-node" style="--pill-color:#68a063">
               <span class="pill-dot"></span>Node.js
             </div>
-            <div class="tech-pill" id="tech-express" style="--pill-color:#999">
+            <div class="tech-pill" id="tech-express" style="--pill-color:#aaaaaa">
               <span class="pill-dot"></span>Express.js
             </div>
           </div>
@@ -357,13 +379,13 @@
             <div class="tech-pill" id="tech-git" style="--pill-color:#f05032">
               <span class="pill-dot"></span>Git
             </div>
-            <div class="tech-pill" id="tech-github" style="--pill-color:#ccc">
+            <div class="tech-pill" id="tech-github" style="--pill-color:#cccccc">
               <span class="pill-dot"></span>GitHub
             </div>
             <div class="tech-pill" id="tech-postman" style="--pill-color:#ef5b25">
               <span class="pill-dot"></span>Postman
             </div>
-            <div class="tech-pill" id="tech-railway" style="--pill-color:#0b0d0e">
+            <div class="tech-pill" id="tech-railway" style="--pill-color:#7b61ff">
               <span class="pill-dot"></span>Railway
             </div>
             <div class="tech-pill" id="tech-vscode" style="--pill-color:#007acc">
@@ -379,12 +401,12 @@
   <!-- ===== PROJECTS ===== -->
   <section id="projects" class="section section-alt">
     <div class="container">
-      <div class="section-tag">04 / PROJECTS</div>
+      <div class="section-tag">04 / Projects</div>
       <h2 class="section-title">Featured work</h2>
       <p class="section-sub">Projects built with real-world use cases and production-quality code.</p>
       <div class="projects-grid">
 
-        <div class="project-card featured" id="project-hrms">
+        <div class="project-card featured tilt-card" id="project-hrms">
           <div class="project-header">
             <div class="project-icon">🏢</div>
             <span class="featured-badge">★ FEATURED</span>
@@ -398,23 +420,23 @@
           </div>
         </div>
 
-        <div class="project-card" id="project-portfolio">
+        <div class="project-card tilt-card" id="project-portfolio">
           <div class="project-header">
             <div class="project-icon">💼</div>
             <a href="#" target="_blank" class="project-ext-link" id="portfolio-ext-link">↗</a>
           </div>
           <h3>Personal Portfolio Website</h3>
           <p>A responsive portfolio website to showcase my skills, projects, and experience to potential employers.
-            Deployed on Railway with a professional design.</p>
+            Deployed on Railway with a professional design and dark/light mode toggle.</p>
           <div class="project-tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Railway</span>
           </div>
         </div>
 
-        <div class="project-card" id="project-capstone">
+        <div class="project-card tilt-card" id="project-capstone">
           <div class="project-header">
             <div class="project-icon">📍</div>
-            <span class="featured-badge" style="background: var(--primary);">★ CAPSTONE</span>
+            <span class="featured-badge" style="background: linear-gradient(135deg, #a78bfa, #f472b6);">★ CAPSTONE</span>
           </div>
           <h3>IoT-Based Smart Tracking System for Dementia Patients</h3>
           <p>Developed web and mobile systems to track patients using IoT technology. This was my Capstone Project,
@@ -431,7 +453,7 @@
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" class="section">
     <div class="container">
-      <div class="section-tag">05 / EXPERIENCE</div>
+      <div class="section-tag">05 / Experience</div>
       <h2 class="section-title">Background &amp; education</h2>
       <p class="section-sub">My academic journey and hands-on experience.</p>
       <div class="timeline">
@@ -441,7 +463,7 @@
           <div class="timeline-content">
             <div class="timeline-date">2026 – Present <span class="badge-current">Current</span></div>
             <h3>Government Staff — HR Office</h3>
-            <p class="timeline-company">Provincial Human Resource Management Office (PHRMO) · Bukidnon</p>
+            <p class="timeline-company">📍 Provincial Human Resource Management Office (PHRMO) · Bukidnon</p>
             <p>Working at the Provincial Human Resource Management Office in Bukidnon. Handles employee records, data
               management, HR documentation, and administrative tasks. Work hours: 7:30 AM – 5:00 PM. Available for
               part-time remote work from 8 PM – 12 AM.</p>
@@ -456,7 +478,7 @@
           <div class="timeline-content">
             <div class="timeline-date">2026</div>
             <h3>IT Intern — HRMS Developer</h3>
-            <p class="timeline-company">Provincial Human Resource Management Office (PHRMO) · Bukidnon</p>
+            <p class="timeline-company">📍 Provincial Human Resource Management Office (PHRMO) · Bukidnon</p>
             <p>Designed and developed a full Human Resource Management Data System (HRMS) for the office during
               internship. Handled full-stack development: database design, backend with Laravel/PHP, and frontend with
               Bootstrap and JavaScript.</p>
@@ -471,7 +493,7 @@
           <div class="timeline-content">
             <div class="timeline-date">2022 – 2026</div>
             <h3>Bachelor of Science in Information Technology</h3>
-            <p class="timeline-company">University — Bukidnon, Philippines</p>
+            <p class="timeline-company">🎓 University — Bukidnon, Philippines</p>
             <p>Completed a 4-year degree in Information Technology. Gained proficiency in web development, database
               management, software engineering principles, and network fundamentals.</p>
             <div class="timeline-tags">
@@ -487,7 +509,7 @@
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="section section-alt">
     <div class="container">
-      <div class="section-tag">06 / CONTACT</div>
+      <div class="section-tag">06 / Contact</div>
       <h2 class="section-title">Let's work together</h2>
       <p class="section-sub">Available for part-time, data entry, or freelance work from 8 PM – 12 AM. Let's connect!
       </p>
@@ -545,8 +567,8 @@
   <!-- ===== FOOTER ===== -->
   <footer id="footer">
     <div class="container footer-inner">
-      <span>© 2025 Eric Alenton. All rights reserved.</span>
-      <span>Built with HTML, CSS &amp; JavaScript · Hosted on Railway</span>
+      <span>© 2026 <strong>Eric Alenton</strong>. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; JavaScript · Hosted on <a href="https://railway.app" target="_blank">Railway</a></span>
     </div>
   </footer>
 
