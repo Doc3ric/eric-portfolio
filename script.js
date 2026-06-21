@@ -152,7 +152,7 @@ tiltCards.forEach(card => {
 // ===== TYPEWRITER EFFECT =====
 const typewriterTarget = document.getElementById('typewriter-target');
 if (typewriterTarget) {
-  const words = ['Digital Solutions', 'Web Applications', 'HRMS Systems', 'REST APIs', 'Clean Code'];
+  const words = ['Digital Solutions', 'Web Applications', 'School Systems', 'Mobile Apps', 'REST APIs', 'Scalable Systems', 'Clean Code'];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -373,7 +373,7 @@ const statsObserver = new IntersectionObserver((entries) => {
       const strong = entry.target.querySelector('strong');
       if (strong) {
         const text = strong.textContent;
-        if (text === '3+') animateCounter(strong, 3, '+');
+        if (text === '7+') animateCounter(strong, 7, '+');
       }
       statsObserver.unobserve(entry.target);
     }
@@ -381,3 +381,25 @@ const statsObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 document.querySelectorAll('.stat-item').forEach(el => statsObserver.observe(el));
+
+// ===== CONTACT FORM HANDLER =====
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Construct the email body
+    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    // Open default mail client
+    window.location.href = `mailto:ericalenton35@gmail.com?subject=${subject}&body=${body}`;
+
+    // Optional: Reset form after sending
+    contactForm.reset();
+  });
+}
