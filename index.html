@@ -11,7 +11,7 @@
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:title" content="Eric Alenton — Full-Stack Web Developer" />
   <meta property="og:description"
-    content="BSIT Web Developer with 7+ projects across Laravel, Android, Flutter, Python, and IoT. Built production-deployed systems for a government office and an elementary school." />
+    content="BSIT Web Developer with 8+ projects across Laravel, Django, Android, Flutter, Python, and IoT. Built production-deployed systems for a government office and an elementary school." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://doc3ric.github.io/" />
 
@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Eric Alenton — Full-Stack Web Developer" />
   <meta name="twitter:description"
-    content="BSIT Web Developer with 7+ projects: Laravel HRMS, School Management System, Android IoT, Flutter, and Python Analytics. Available for freelance work (8 PM–12 AM)." />
+    content="BSIT Web Developer with 8+ projects: Laravel HRMS, Django ATS, School Management System, Android IoT, Flutter, and Python Analytics. Available for freelance work (8 PM–12 AM)." />
 
   <!-- Favicon -->
   <link rel="icon"
@@ -97,7 +97,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <strong>7+</strong>
+            <strong>8+</strong>
             <span>Projects Built</span>
           </div>
           <div class="stat-divider"></div>
@@ -351,6 +351,9 @@
         <div class="tech-category-group">
           <div class="tech-category-label">⚙️ Backend</div>
           <div class="tech-pills">
+            <div class="tech-pill" id="tech-django" style="--pill-color:#092e20">
+              <span class="pill-dot"></span>Django
+            </div>
             <div class="tech-pill" id="tech-laravel" style="--pill-color:#ff2d20">
               <span class="pill-dot"></span>Laravel
             </div>
@@ -396,6 +399,9 @@
         <div class="tech-category-group">
           <div class="tech-category-label">🗄️ Database</div>
           <div class="tech-pills">
+            <div class="tech-pill" id="tech-postgresql" style="--pill-color:#336791">
+              <span class="pill-dot"></span>PostgreSQL
+            </div>
             <div class="tech-pill" id="tech-mysql" style="--pill-color:#00758f">
               <span class="pill-dot"></span>MySQL
             </div>
@@ -477,7 +483,25 @@
       <p class="section-sub">Projects built with real-world use cases and production-quality code.</p>
       <div class="projects-grid">
 
-        <!-- 1. HRMS — ★ FEATURED (biggest, production LGU system) -->
+        <!-- 1. TalentFlow ATS -->
+        <div class="project-card featured tilt-card" id="project-talentflow">
+          <div class="project-header">
+            <div class="project-icon">🚀</div>
+            <div style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+              <span class="featured-badge" style="background:linear-gradient(135deg,#6366f1,#4f46e5);">★ FEATURED ATS</span>
+            </div>
+          </div>
+          <h3>TalentFlow ATS — Applicant Tracking System</h3>
+          <p>A production-ready <strong>Applicant Tracking System (ATS)</strong> featuring automatic resume parsing from PDFs, intelligent candidate-to-job match scoring, an interactive drag-and-drop Kanban pipeline for stage tracking, and full audit trails of application status changes. Includes automated custom PDF offer letter generation, dynamic email automation, and a real-time JSON-based skills search for the talent pool.</p>
+          <div style="margin: 0.6rem 0; padding: 0.5rem 0.75rem; background: rgba(99,102,241,0.08); border-left: 3px solid #6366f1; border-radius: 0 6px 6px 0; font-size: 0.78rem; color: var(--text-muted, #94a3b8);">
+            💼 <strong style="color:#6366f1;">Features:</strong> Resume Parsing · Match Scoring · Kanban Pipeline · Timeline · Offer Letters · Emails · Talent Pool
+          </div>
+          <div class="project-tags">
+            <span>Django 4.2</span><span>Django REST Framework</span><span>PostgreSQL</span><span>React 18</span><span>Vite</span><span>TailwindCSS</span><span>TanStack Query</span><span>Recharts</span>
+          </div>
+        </div>
+
+        <!-- 2. HRMS — ★ FEATURED (biggest, production LGU system) -->
         <div class="project-card featured tilt-card" id="project-hrms">
           <div class="project-header">
             <div class="project-icon">🏛️</div>
